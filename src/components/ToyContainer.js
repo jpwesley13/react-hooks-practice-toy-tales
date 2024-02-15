@@ -1,9 +1,15 @@
 import React from "react";
 import ToyCard from "./ToyCard";
 
-function ToyContainer() {
+function ToyContainer({toy, onDonateToy, onLikeToy}) {
+
+
   return (
-    <div id="toy-collection">{/* Render the collection of ToyCards */}</div>
+    <div id="toy-collection">{<ToyCard
+    toy={toy}
+    onDonateToy={onDonateToy}
+    // onLikeToy={onLikeToy}
+    />}</div>
   );
 }
 
